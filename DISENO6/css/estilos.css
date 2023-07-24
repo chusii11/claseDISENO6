@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.alfa {
+  height: 100vh;
+  background: #cfcfcf;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center; }
+  .alfa .izquierda {
+    height: 93vh;
+    width: 300px;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 10px;
+    margin-left: 20px; }
+    .alfa .izquierda .compose {
+      margin-top: 1.5rem;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      justify-content: center;
+      background: #8118aa;
+      padding-bottom: 8px;
+      padding-top: 8px;
+      border-radius: 50px;
+      color: #fff;
+      margin-bottom: 2rem;
+      transition: .15s; }
+    .alfa .izquierda .compose:hover {
+      transform: scale(1.05);
+      cursor: pointer; }
+    .alfa .izquierda .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      box-sizing: border-box;
+      margin-bottom: 2rem; }
+      .alfa .izquierda .menu .carpeta {
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        transition: .15s; }
+        .alfa .izquierda .menu .carpeta .carpeta-izquierda {
+          flex: 1;
+          display: flex;
+          flex-direction: row;
+          gap: 15px; }
+        .alfa .izquierda .menu .carpeta .numero {
+          flex: end;
+          color: #8118aa;
+          background: rgba(170, 170, 170, 0.5);
+          padding: 5px;
+          border-radius: 50%;
+          align-items: center; }
+      .alfa .izquierda .menu .carpeta:hover {
+        background: rgba(170, 170, 170, 0.5);
+        color: #8118aa; }
+      .alfa .izquierda .menu .carpeta:nth-child(1) {
+        padding-left: 5px;
+        align-items: center; }
+      .alfa .izquierda .menu .carpeta:nth-child(n+2) {
+        padding: 5px; }
+      .alfa .izquierda .menu .carpeta:nth-child(4) {
+        padding: 0;
+        padding-left: 5px;
+        padding-top: 5px;
+        align-items: center; }
+    .alfa .izquierda .label {
+      display: flex;
+      flex-direction: column;
+      gap: 15px; }
+      .alfa .izquierda .label .carpeta-label {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        padding: 5px;
+        transition: .15s; }
+      .alfa .izquierda .label .carpeta-label:hover {
+        background: rgba(170, 170, 170, 0.5);
+        color: #8118aa; }
+  .alfa .derecha {
+    height: 93vh;
+    margin-right: 20px;
+    flex: 1;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem; }
+    .alfa .derecha .barra-superior {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      padding: 15px;
+      box-sizing: border-box; }
+      .alfa .derecha .barra-superior .barra-izquierda {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        height: min-content; }
+        .alfa .derecha .barra-superior .barra-izquierda .bi {
+          padding: 10px;
+          transition: .15s;
+          border-radius: 50%; }
+        .alfa .derecha .barra-superior .barra-izquierda .bi:hover {
+          background: rgba(170, 170, 170, 0.5);
+          color: #8118aa; }
+      .alfa .derecha .barra-superior .barra-derecha {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        height: min-content; }
+        .alfa .derecha .barra-superior .barra-derecha input {
+          height: 1.2rem;
+          width: 15rem;
+          border-top-right-radius: 20px;
+          border-bottom-right-radius: 20px;
+          background: #cecdcd;
+          border: 0px solid;
+          padding: 10px;
+          margin-top: -10px; }
+        .alfa .derecha .barra-superior .barra-derecha .bi-search {
+          margin-right: -25px;
+          background: #cecdcd;
+          padding: 10px;
+          margin-top: -10px;
+          border-top-left-radius: 20px;
+          border-bottom-left-radius: 20px; }
+    .alfa .derecha .email {
+      display: flex;
+      flex-direction: row;
+      padding: 15px;
+      border-top: 1px solid #000;
+      width: 97%; }
+      .alfa .derecha .email .email-izquierda {
+        flex: 3;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+        font-size: .8rem; }
+        .alfa .derecha .email .email-izquierda .foto {
+          background-image: url(../recursos/joseph-sharp-kgR5i_oElDs-unsplash.jpg);
+          background-position: center;
+          background-size: cover;
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          margin-top: -5px; }
+        .alfa .derecha .email .email-izquierda .bi-star-fill {
+          color: #ffbb00; }
+      .alfa .derecha .email .email-medio {
+        flex: 4;
+        display: flex;
+        flex-direction: column;
+        font-size: .8rem;
+        gap: 10px; }
+        .alfa .derecha .email .email-medio .email-medio-arriba {
+          display: flex;
+          flex-direction: row;
+          gap: 20px; }
+          .alfa .derecha .email .email-medio .email-medio-arriba p {
+            font-weight: bold; }
+          .alfa .derecha .email .email-medio .email-medio-arriba span {
+            background: #c9c9c9;
+            padding: 5px;
+            border-radius: 15px;
+            margin-top: -5px; }
+        .alfa .derecha .email .email-medio .email-archivos {
+          display: flex;
+          flex-direction: row;
+          gap: 15px; }
+          .alfa .derecha .email .email-medio .email-archivos .archivo {
+            display: flex;
+            flex-direction: row;
+            background: #c9c9c9;
+            border-radius: 10px;
+            padding: 5px; }
+      .alfa .derecha .email .email-derecha {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        margin-left: 22rem; }
+
+/*# sourceMappingURL=estilos.css.map */
